@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "YT Commment Blocker",
+    "version": "0.1.0",
+    "description": "Chrome extension to block youtube comments",
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["index.js"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+    }
+}
